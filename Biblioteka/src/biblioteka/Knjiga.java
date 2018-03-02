@@ -1,6 +1,8 @@
 
 package biblioteka;
 
+import java.util.Arrays;
+
 public class Knjiga {
 	private String naslov;
 	private String isbn;
@@ -40,6 +42,10 @@ public class Knjiga {
 	}
 	public void setIzdanje(int izdanje) {
 		this.izdanje = izdanje;
+	}
+	@Override
+	public String toString() {
+		return "Knjiga [izdavac=" + izdavac + ", autori=" + Arrays.toString(autori) + "]";
 	}
 	
 	
